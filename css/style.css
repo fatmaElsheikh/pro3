@@ -1,6 +1,6 @@
 /* sass */
 .btnn, .top-main .right button, .articles .no-js .owl-carousel .card button,
-.articles .owl-carousel.owl-loaded .card button, .orders .mor {
+.articles .owl-carousel.owl-loaded .card button, .orders .mor, .orders-page .ord-app {
   background-color: #2D3E50;
   color: #fff;
   border: 3px solid #fff;
@@ -12,7 +12,7 @@
 body {
   direction: rtl; }
 
-        /*
+                        /*
 top nav style
 */
 .top-nav {
@@ -24,6 +24,28 @@ top nav style
 li.nav-item.active a.nav-link {
   border-bottom: 2px solid #E0232A;
   color: #E0232A !important; }
+
+.navbar a.nav-link {
+  color: rgba(0, 0, 0, 0.71);
+  position: relative;
+  font-weight: 500;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem; }
+.navbar a.nav-link:after {
+  /* left: 1; */
+  content: '';
+  position: absolute;
+  height: 42%;
+  width: 1px;
+  background: #e9e7e7;
+  top: 29px;
+  left: 1; }
+
+.bg-light {
+  background-color: #ffffff !important;
+  box-shadow: 0px 2px 20px 2px #eee; }
 
 /* top main */
 .top-main {
@@ -138,7 +160,7 @@ li.nav-item.active a.nav-link {
       background: #E0232A;
       width: 120px; }
 
-        /*
+                        /*
 =====================
 orders
 =====================
@@ -221,7 +243,7 @@ orders
     display: block;
     margin: 20px auto; }
 
-        /*
+                        /*
 contact
 */
 .contact {
@@ -260,7 +282,7 @@ contact
       height: 85px;
       margin-left: -33px; }
 
-    /*
+                    /*
 =================
 APPLICATION 
 =================
@@ -279,7 +301,7 @@ APPLICATION
   .app .avail {
     color: #474344; }
 
-        /*
+                        /*
 footer
 -========
 */
@@ -312,19 +334,45 @@ footer
   .bottom-footer span {
     color: #E0232A; }
 
-    /*
+                    /*
 ORDERS PAGE
 -========================
 */
+.orders-page button {
+  transition: 0.4s all; }
+  .orders-page button:hover {
+    background: #2D3E50;
+    color: #fff; }
+.orders-page .ord-app {
+  margin-bottom: 0;
+  padding: 4px 0 4px 30px;
+  border-radius: 10px; }
+  .orders-page .ord-app img {
+    margin-top: -26px;
+    margin-right: -25px; }
+.orders-page nav {
+  text-align: center !important; }
+  .orders-page nav .pagination {
+    margin-top: 2rem; }
+    .orders-page nav .pagination .page-link {
+      color: #2D3E50;
+      padding: 1rem 1rem;
+      margin-right: 5px; }
+    .orders-page nav .pagination .page-item.active .page-link {
+      z-index: 1;
+      color: #fff;
+      background-color: #2D3E50;
+      border-color: #2D3E50; }
+
 .con {
   width: 80%;
   margin: 5px auto;
   margin-top: 3rem; }
 
-h4 {
+.orders h4 {
   padding-top: 50px;
   position: relative; }
-  h4::after {
+  .orders h4::after {
     content: '';
     position: absolute;
     bottom: -15px;
