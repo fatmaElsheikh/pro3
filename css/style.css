@@ -213,6 +213,7 @@ orders
     color: #29292B; }
   .orders .search {
     background: #fff;
+    margin: 0rem auto;
     /* padding: 0.5rem; */
     width: 60px;
     height: 60px;
@@ -296,6 +297,8 @@ APPLICATION
   background: url("../img/BG-phone.png") no-repeat;
   background-size: cover;
   padding: 2rem 0 2rem; }
+  .app img {
+    width: 100%; }
   .app h3 {
     color: #484443;
     margin-bottom: 2rem; }
@@ -398,7 +401,8 @@ ORDERS PAGE
   margin: 2rem 0; }
 
 .login-form {
-  background: #fff; }
+  background: #fff;
+  margin-bottom: 2rem; }
   .login-form form {
     width: 70%;
     margin: 1rem auto;
@@ -422,5 +426,190 @@ ORDERS PAGE
       display: block;
       text-align: center;
       margin: 1.5rem auto; }
+
+.dpmnu {
+  position: relative; }
+  .dpmnu svg.svg-inline--fa.fa-chevron-down.fa-w-14,
+  .dpmnu svg.svg-inline--fa.fa-calendar-alt.fa-w-14 {
+    position: absolute;
+    top: 40%;
+    left: 20px;
+    color: #7B7B7B; }
+
+/*
+login 
+*/
+.login-page .login-form form .btn-create {
+  display: initial;
+  margin: 0;
+  padding: 0.5rem 0rem;
+  width: 17rem;
+  margin-left: 2rem; }
+.login-page .btnn, .login-page .top-main .right button, .top-main .right .login-page button, .login-page .articles .no-js .owl-carousel .card button, .articles .no-js .owl-carousel .card .login-page button,
+.login-page .articles .owl-carousel.owl-loaded .card button,
+.articles .owl-carousel.owl-loaded .card .login-page button, .login-page .orders .mor, .orders .login-page .mor, .login-page .orders-page .ord-app, .orders-page .login-page .ord-app {
+  margin-bottom: 0;
+  padding: 0.5rem 0rem;
+  width: 17rem; }
+
+    /*
+contact page 
+*/
+.contactt .btnn, .contactt .top-main .right button, .top-main .right .contactt button, .contactt .articles .no-js .owl-carousel .card button, .articles .no-js .owl-carousel .card .contactt button,
+.contactt .articles .owl-carousel.owl-loaded .card button,
+.articles .owl-carousel.owl-loaded .card .contactt button, .contactt .orders .mor, .orders .contactt .mor, .contactt .orders-page .ord-app, .orders-page .contactt .ord-app {
+  padding: 2rem 0px;
+  line-height: 0;
+  margin-bottom: 2rem;
+  border: 0; }
+.contactt .right {
+  background: #fff;
+  padding-bottom: 5rem; }
+  .contactt .right img {
+    width: 50%;
+    display: block;
+    margin: 0px auto; }
+.contactt svg:not(:root).svg-inline--fa {
+  color: #fff; }
+.contactt .f {
+  background: #3A549F; }
+.contactt .in {
+  background: #C937A6; }
+.contactt .y {
+  background: #D34C2E; }
+.contactt .t {
+  background: #50ABF1; }
+.contactt .g {
+  background: #DE4B39; }
+.contactt .w {
+  background: #1BD742; }
+.contactt span {
+  padding: 1.1rem 0.5rem;
+  margin: 2rem 0rem 5rem 1rem; }
+.contactt h6 {
+  color: #E62223;
+  margin-bottom: 2rem; }
+.contactt .left {
+  background: #fff; }
+  .contactt .left .form-control {
+    border-radius: 0;
+    font-weight: 500; }
+  .contactt .left input.form-control,
+  .contactt .left textarea.form-control {
+    margin: 1rem 6px 0 6px;
+    background: #FBFBFB;
+    width: calc(100% - 12px);
+    padding: 1.5rem; }
+
+/*
+==============
+about page
+================
+*/
+.about {
+  background: #fff;
+  padding: 2rem 1rem 4rem 1rem;
+  margin-bottom: 2rem;
+  border: 1px solid #F3F3F3; }
+  .about img {
+    display: block;
+    margin: 2rem auto; }
+  .about p {
+    font-weight: 500; }
+
+/*
+================
+details page
+===============
+*/
+.details h4 {
+  position: relative;
+  background: #2D3E50;
+  color: #fff;
+  padding: 1rem;
+  font-size: 1.3rem; }
+  .details h4 svg.svg-inline--fa.fa-heart.fa-w-16 {
+    position: absolute;
+    left: 1.5rem; }
+.details .details-p {
+  background: #fff;
+  border: 1px solid #E9E9E9;
+  margin: 2rem 0; }
+  .details .details-p p {
+    padding: 1rem; }
+
+.det {
+  margin-bottom: 3rem; }
+  .det .card {
+    width: 90% !important; }
+  .det h3:after {
+    width: 188px; }
+
+/*
+===============
+order
+==================
+*/
+.or-det {
+  background: #fff;
+  border: 1px solid #E9E9E9;
+  padding: 1rem; }
+  .or-det table {
+    width: 98%; }
+    .or-det table .odd {
+      background: #FBFBFB; }
+  .or-det .table td,
+  .or-det .table th {
+    width: 50%;
+    border: 0; }
+  .or-det button {
+    display: block;
+    margin: 2rem auto; }
+  .or-det p {
+    margin: 0.3rem;
+    padding: 1rem;
+    border: 1px solid #E9E9E9; }
+
+/*
+===========
+dropdown menu
+===============
+*/
+.test ul {
+  list-style: none;
+  background: #FFFFFF;
+  display: inline-block;
+  padding: 0rem;
+  text-align: right;
+  position: relative;
+  margin-top: -1rem; }
+  .test ul:after {
+    content: '';
+    position: absolute;
+    width: 1rem;
+    height: 1rem;
+    left: 7%;
+    background: #fff;
+    top: -2%;
+    transform: rotateZ(-45deg); }
+  .test ul li {
+    z-index: 5555;
+    padding: 0.9rem;
+    width: 14rem;
+    cursor: pointer;
+    color: #918f8f;
+    font-weight: 500;
+    position: relative; }
+    .test ul li:after {
+      content: '';
+      height: 1px;
+      position: absolute;
+      bottom: 0;
+      width: 99%;
+      background: #eee;
+      right: 0; }
+    .test ul li:hover {
+      background: #2D3E50;
+      color: #fff; }
 
 /*# sourceMappingURL=style.css.map */

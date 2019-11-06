@@ -22,12 +22,10 @@ $('.nav-item').click(function() {
     $('.nav-item').removeClass('active');
     $(this).addClass('active');
 });
+$(function() {
+    $('[data-toggle="popover"]').popover()
+});
 
-$('.blood .dropdown-item').click(function() {
-    $bld = $(this).html();
-    $('.inp').val($bld);
-});
-$('.country .dropdown-item').click(function() {
-    $bldd = $(this).html();
-    $('.inpp').val($bldd);
-});
+
+
+//document.addEventListener("click", () => alert('this is onclick popup'));

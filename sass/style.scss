@@ -262,6 +262,7 @@ orders
         }
         .search {
             background: #fff;
+            margin: 0rem auto;
             /* padding: 0.5rem; */
             width: 60px;
             height: 60px;
@@ -364,6 +365,9 @@ APPLICATION
         background: url('../img/BG-phone.png') no-repeat;
         background-size: cover;
         padding: 2rem 0 2rem;
+        img {
+            width: 100%;
+        }
         h3 {
             color: #484443;
             margin-bottom: 2rem;
@@ -502,6 +506,7 @@ ORDERS PAGE
     
     .login-form {
         background: #fff;
+        margin-bottom: 2rem;
         form {
             width: 70%;
             margin: 1rem auto;
@@ -527,6 +532,235 @@ ORDERS PAGE
                 display: block;
                 text-align: center;
                 margin: 1.5rem auto;
+            }
+        }
+    }
+    
+    .dpmnu {
+        position: relative;
+        svg.svg-inline--fa.fa-chevron-down.fa-w-14,
+        svg.svg-inline--fa.fa-calendar-alt.fa-w-14 {
+            position: absolute;
+            top: 40%;
+            left: 20px;
+            color: #7B7B7B;
+        }
+    }
+    /*
+    login 
+    */
+    
+    .login-page {
+        .login-form form .btn-create {
+            display: initial;
+            margin: 0;
+            padding: 0.5rem 0rem;
+            width: 17rem;
+            margin-left: 2rem;
+        }
+        .btnn {
+            margin-bottom: 0;
+            padding: 0.5rem 0rem;
+            width: 17rem;
+        }
+    }
+    /*
+contact page 
+*/
+    
+    .contactt {
+        .btnn {
+            padding: 2rem 0px;
+            line-height: 0;
+            margin-bottom: 2rem;
+            border: 0;
+        }
+        .right {
+            background: #fff;
+            padding-bottom: 5rem;
+            img {
+                width: 50%;
+                display: block;
+                margin: 0px auto;
+            }
+        }
+        svg:not(:root).svg-inline--fa {
+            color: #fff;
+        }
+        .f {
+            background: #3A549F;
+        }
+        .in {
+            background: #C937A6;
+        }
+        .y {
+            background: #D34C2E;
+        }
+        .t {
+            background: #50ABF1;
+        }
+        .g {
+            background: #DE4B39;
+        }
+        .w {
+            background: #1BD742;
+        }
+        span {
+            padding: 1.1rem 0.5rem;
+            margin: 2rem 0rem 5rem 1rem;
+        }
+        h6 {
+            color: #E62223;
+            margin-bottom: 2rem;
+        }
+        .left {
+            background: #fff;
+            .form-control {
+                border-radius: 0;
+                font-weight: 500;
+            }
+            input.form-control,
+            textarea.form-control {
+                margin: 1rem 6px 0 6px;
+                background: #FBFBFB;
+                width: calc(100% - 12px);
+                padding: 1.5rem;
+            }
+        }
+    }
+    /*
+    ==============
+    about page
+    ================
+    */
+    
+    .about {
+        background: #fff;
+        padding: 2rem 1rem 4rem 1rem;
+        margin-bottom: 2rem;
+        border: 1px solid #F3F3F3;
+        img {
+            display: block;
+            margin: 2rem auto;
+        }
+        p {
+            font-weight: 500;
+        }
+    }
+    /*
+    ================
+    details page
+    ===============
+    */
+    
+    .details {
+        h4 {
+            position: relative;
+            background: #2D3E50;
+            color: #fff;
+            padding: 1rem;
+            font-size: 1.3rem;
+            svg.svg-inline--fa.fa-heart.fa-w-16 {
+                position: absolute;
+                left: 1.5rem;
+            }
+        }
+        .details-p {
+            background: #fff;
+            border: 1px solid #E9E9E9;
+            margin: 2rem 0;
+            p {
+                padding: 1rem;
+            }
+        }
+    }
+    
+    .det {
+        margin-bottom: 3rem;
+        .card {
+            width: 90% !important;
+        }
+        h3:after {
+            width: 188px;
+        }
+    }
+    /*
+    ===============
+    order
+    ==================
+    */
+    
+    .or-det {
+        background: #fff;
+        border: 1px solid #E9E9E9;
+        padding: 1rem;
+        table {
+            width: 98%;
+            .odd {
+                background: #FBFBFB;
+            }
+        }
+        .table td,
+        .table th {
+            width: 50%;
+            border: 0;
+        }
+        button {
+            display: block;
+            margin: 2rem auto;
+        }
+        p {
+            margin: 0.3rem;
+            padding: 1rem;
+            border: 1px solid #E9E9E9;
+        }
+    }
+    /*
+    ===========
+    dropdown menu
+    ===============
+    */
+    
+    .test {
+        ul {
+            list-style: none;
+            background: #FFFFFF;
+            display: inline-block;
+            padding: 0rem;
+            text-align: right;
+            position: relative;
+            margin-top: -1rem;
+            &:after {
+                content: '';
+                position: absolute;
+                width: 1rem;
+                height: 1rem;
+                left: 7%;
+                background: #fff;
+                top: -2%;
+                transform: rotateZ(-45deg);
+            }
+            li {
+                z-index: 5555;
+                padding: 0.9rem;
+                width: 14rem;
+                cursor: pointer;
+                color: #918f8f;
+                font-weight: 500;
+                position: relative;
+                &:after {
+                    content: '';
+                    height: 1px;
+                    position: absolute;
+                    bottom: 0;
+                    width: 99%;
+                    background: #eee;
+                    right: 0;
+                }
+                &:hover {
+                    background: #2D3E50;
+                    color: #fff;
+                }
             }
         }
     }

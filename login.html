@@ -2,7 +2,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>انشاء حساب جديد</title>
+    <title> تسجيل الدخول</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link href="https://fonts.googleapis.com/css?family=Cairo&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.rtlcss.com/bootstrap/v4.2.1/css/bootstrap.min.css" integrity="sha384-vus3nQHTD+5mpDiZ4rkEPlnkcyTP+49BhJ4wJeJunw06ZAp+wzzeBPUXr42fi8If" crossorigin="anonymous">
@@ -16,7 +16,7 @@
 </head>
 
 <body>
-    <div class="orders-page">
+    <div class="orders-page login-page">
         <!-- top nav-->
         <nav class="top-nav">
             <div class="container nav">
@@ -96,7 +96,7 @@
             <nav aria-label="breadcrumb ">
                 <ol class="breadcrumb bg-white text-dark" style=" border: 1px solid #E9E9E9;">
                     <li class="breadcrumb-item"><a href="index.html">الرئيسيه</a></li>
-                    <li class="breadcrumb-item active" aria-current="page">انشاء حساب جديد </li>
+                    <li class="breadcrumb-item active" aria-current="page">تسجيل الدخول </li>
                 </ol>
             </nav>
         </div>
@@ -104,28 +104,25 @@
         <div class="container">
             <div class="login-form" style=" border: 1px solid #E9E9E9;">
                 <form>
+                    <img src="img/logo.png" style="margin: 2rem auto;  display: block;">
                     <input type="text" class="form-control" placeholder="الاسم">
                     <input type="email" class="form-control" placeholder="البريد الالكتروني">
-                    <input type="date" class="form-control" value="تاريخ الميلاد ">
-                    <input type="text" class="form-control" placeholder="فصيلة الدم">
-                    <input type="text" class="form-control" placeholder="رقم الهاتف">
-                    <div class="form-group">
-                        <select class="custom-select custom-select-lg mt-4 bg-light" required>
-                              <option value="">المحافظه</option>
-                              <option value="1">One</option>
-                              <option value="2">Two</option>
-                              <option value="3">Three</option>
-                            </select>
+                    <div class="form-group form-check mt-3 mr-auto" style="display: inline-flex; float: right;">
+                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                        <label class="form-check-label" for="exampleCheck1">تذكرني</label>
                     </div>
-                    <input type="text" class="form-control" placeholder="الاسم">
-                    <input type="password" class="form-control" placeholder="كلمة المرور">
-                    <input type="password" class="form-control" placeholder="تأكيد كلمة المرور">
-                    <button class="btn-create">انشاء</button>
+                    <div class="ml-auto mt-3" style="display: inline-flex; float: left;">
+                        <span class=""> هل نسيت كلمه المرور</span>
+
+                    </div>
+                    <div class="clearfix"></div>
+                    <div class="text-center mt-4">
+                        <button class=" btn-create">دخول</button>
+                        <button class=" btnn">انشاء حساب جديد</button>
+                    </div>
                 </form>
             </div>
         </div>
-
-
         <!--footer-->
         <!--top footer -->
         <div class="top-footer">
