@@ -153,6 +153,8 @@
                 }
             }
             .card {
+                width: 90%;
+                margin: 0px auto;
                 position: relative;
                 .card-img-top {
                     margin: 3px;
@@ -365,7 +367,7 @@ APPLICATION
         background: url('../img/BG-phone.png') no-repeat;
         background-size: cover;
         padding: 2rem 0 2rem;
-        img {
+        .imgg {
             width: 100%;
         }
         h3 {
@@ -411,9 +413,12 @@ footer
             h5 {
                 color: $color;
                 margin-bottom: 50px;
+                text-align: center;
             }
             img {
-                margin-bottom: 20px;
+                //margin-bottom: 20px;
+                display: block;
+                margin: 10px auto;
             }
         }
     }
@@ -607,7 +612,13 @@ contact page
         }
         span {
             padding: 1.1rem 0.5rem;
-            margin: 2rem 0rem 5rem 1rem;
+            .svg-inline--fa.fa-w-20,
+            .svg-inline--fa.fa-w-14,
+            .svg-inline--fa.fa-w-18,
+            .svg-inline--fa.fa-w-16,
+            .svg-inline--fa.fa-w-10 {
+                width: 10% !important;
+            }
         }
         h6 {
             color: #E62223;
@@ -642,6 +653,8 @@ contact page
         img {
             display: block;
             margin: 2rem auto;
+            height: 5rem;
+            width: 17rem;
         }
         p {
             font-weight: 500;
@@ -763,4 +776,53 @@ contact page
                 }
             }
         }
+    }
+    /*
+=============
+media query
+==============
+*/
+    
+    @media only screen and (max-width: 600px) {
+        .orders .inp,
+        .orders .inpp {
+            width: 200px;
+        }
+        .orders .bplus {
+            border-radius: 0;
+            padding-bottom: 8rem;
+            button {
+                display: block !important;
+                margin: 0 auto;
+            }
+        }
+        .contact .contact-details .whats img {
+            display: none;
+        }
+        .contact .contact-details .whats span {
+            /* text-align: center; */
+            /* height: 150px; */
+            background: #3AB54A;
+            color: #fff;
+            padding-top: 0;
+            padding-bottom: 0;
+            padding-right: 0;
+            border-top-right-radius: 0;
+            border-bottom-right-radius: 0;
+            padding: 20px;
+        }
+        .contact .contact-details {
+            width: 100%;
+        }
+    }
+    
+    .log {
+        margin-bottom: 0 !important;
+    }
+    
+    .new {
+        margin-left: 10px;
+        color: #878383;
+        text-decoration: underline;
+        font-weight: 500;
     }

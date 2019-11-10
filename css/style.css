@@ -122,6 +122,8 @@ nav.bg-light {
           opacity: 0.6; }
     .articles .no-js .owl-carousel .card,
     .articles .owl-carousel.owl-loaded .card {
+      width: 90%;
+      margin: 0px auto;
       position: relative; }
       .articles .no-js .owl-carousel .card .card-img-top,
       .articles .owl-carousel.owl-loaded .card .card-img-top {
@@ -297,7 +299,7 @@ APPLICATION
   background: url("../img/BG-phone.png") no-repeat;
   background-size: cover;
   padding: 2rem 0 2rem; }
-  .app img {
+  .app .imgg {
     width: 100%; }
   .app h3 {
     color: #484443;
@@ -330,9 +332,11 @@ footer
     font-weight: 500; }
   .top-footer .left h5 {
     color: #E0232A;
-    margin-bottom: 50px; }
+    margin-bottom: 50px;
+    text-align: center; }
   .top-footer .left img {
-    margin-bottom: 20px; }
+    display: block;
+    margin: 10px auto; }
 
 /* bottom footer */
 .bottom-footer {
@@ -484,8 +488,13 @@ contact page
 .contactt .w {
   background: #1BD742; }
 .contactt span {
-  padding: 1.1rem 0.5rem;
-  margin: 2rem 0rem 5rem 1rem; }
+  padding: 1.1rem 0.5rem; }
+  .contactt span .svg-inline--fa.fa-w-20,
+  .contactt span .svg-inline--fa.fa-w-14,
+  .contactt span .svg-inline--fa.fa-w-18,
+  .contactt span .svg-inline--fa.fa-w-16,
+  .contactt span .svg-inline--fa.fa-w-10 {
+    width: 10% !important; }
 .contactt h6 {
   color: #E62223;
   margin-bottom: 2rem; }
@@ -513,7 +522,9 @@ about page
   border: 1px solid #F3F3F3; }
   .about img {
     display: block;
-    margin: 2rem auto; }
+    margin: 2rem auto;
+    height: 5rem;
+    width: 17rem; }
   .about p {
     font-weight: 500; }
 
@@ -611,5 +622,48 @@ dropdown menu
     .test ul li:hover {
       background: #2D3E50;
       color: #fff; }
+
+    /*
+=============
+media query
+==============
+*/
+@media only screen and (max-width: 600px) {
+  .orders .inp, .orders .inpp,
+  .orders .inpp {
+    width: 200px; }
+
+  .orders .bplus {
+    border-radius: 0;
+    padding-bottom: 8rem; }
+    .orders .bplus button {
+      display: block !important;
+      margin: 0 auto; }
+
+  .contact .contact-details .whats img {
+    display: none; }
+
+  .contact .contact-details .whats span {
+    /* text-align: center; */
+    /* height: 150px; */
+    background: #3AB54A;
+    color: #fff;
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-right: 0;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    padding: 20px; }
+
+  .contact .contact-details {
+    width: 100%; } }
+.log {
+  margin-bottom: 0 !important; }
+
+.new {
+  margin-left: 10px;
+  color: #878383;
+  text-decoration: underline;
+  font-weight: 500; }
 
 /*# sourceMappingURL=style.css.map */
